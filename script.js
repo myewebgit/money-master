@@ -5,6 +5,7 @@ document.getElementById('save').addEventListener('click',function(){
 const depositAmountText = depositInput.value;
 const depositAmount = parseFloat(depositAmountText);
 
+
 // save input**********
 
     const saveInput = document.getElementById('save-input');
@@ -14,29 +15,36 @@ const depositAmount = parseFloat(depositAmountText);
     saveTotal.innerText = saveAmount * depositAmount * (1/100);
     const savings = parseFloat(saveTotal.innerText);
 
-    // Remaining balance*********
     
-    const balanceTotal = document.getElementById('balance-total');
+
+
+    const remainingTotal = document.getElementById('remaining-total');
+const remainingTotalText =remainingTotal.innerText;
+const previousremainingTotal = parseFloat(remainingTotalText);
+const newremainingTotal = depositAmount - savings;
+
+remainingTotal.innerText = newremainingTotal;
+
+const balanceTotal = document.getElementById('balance-total');
 const balanceTotalText =balanceTotal.innerText;
 const previousBalanceTotal = parseFloat(balanceTotalText);
 const newBalanceTotal = depositAmount - newexpencesTotal;
 balanceTotal.innerText = newBalanceTotal;
 
-// remaining******** 
-    const rbalanceTotal = document.getElementById('r-total');
-const rbalanceTotalText =rbalanceTotal.innerText;
-const previousrBalanceTotal = parseFloat(rbalanceTotalText);
-const newrBalanceTotal = newBalanceTotal - savings;
-rbalanceTotal.innerText = newrBalanceTotal;
 
-  })
+    
+  });
 
-  // ***********calculation first part**********
+  
+
+  // ***********calculation first part( Calculate Button)**********
 
   document.getElementById('calculate').addEventListener('click',function(){
     const depositInput = document.getElementById('income-input');
      const depositAmountText = depositInput.value;
 const depositAmount = parseFloat(depositAmountText)
+
+
 
 // depositInput.value = '';
 
@@ -76,9 +84,6 @@ const balanceTotalText =balanceTotal.innerText;
 const previousBalanceTotal = parseFloat(balanceTotalText);
 const newBalanceTotal = depositAmount - newexpencesTotal;
 balanceTotal.innerText = newBalanceTotal;
-
-
-
 
 
 
