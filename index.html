@@ -7,14 +7,75 @@
     <title>Monthly Budget</title>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-info w-80 mx-auto ">
-        <div class="container-fluid  ">
-          <a class="navbar-brand text-center" href="#">
-            <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Money Calculation
-          </a>
+    <header>
+        <nav class="navbar navbar-light bg-info w-80 mx-auto ">
+            <div class="container-fluid  ">
+              <a class="navbar-brand text-center" href="#">
+                <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                Money Calculation
+              </a>
+            </div>
+          </nav>
+    </header>
+
+    <section class="mt-5 text-center">
+      <div class="container px-4">
+          <div class="row ">
+            <div class="col-lg-6 col-sm-12  rounded-3 ">
+             <div class="border bg-light"><img src="images/Screenshot_.png" alt=""></div>
+            </div>
+            <div class="col-lg-6 col-sm-12 border border-2  rounded-3  bg-secondary ">
+             <h5>Income</h5>
+             <div>
+                 <h6 class="d-inline">Income</h6>
+                 <input class="d-inline " id="income-input" type="text">
+                 
+             </div>
+             <div>
+                 <h5>Expences</h5>
+                 <h6 class="d-inline">Food:</h6>
+                 <input class="d-inline my-1" id="food-input" type="text">
+             </div>
+             <div>
+                 <h6 class="d-inline">Rent:</h6>
+                 <input class="d-inline my-1" id="rent-input" type="text">
+             </div>
+             <div>
+                 <h6 class="d-inline">Cloth:</h6>
+                 <input class="d-inline my-1" id="cloth-input" type="text">
+             </div>
+             
+             <button class="bg-info" id="calculate">Calculate</button>
+             <br>
+             <div class="notify-section">
+              <p id="notify-fail" class="notify">❌ Please give a positive value</p>
+              
+          </div>
+             <h6 class="d-inline" >Total Expences:</h6>
+             <h6 class="d-inline" id="expences-total" >00</h6>
+             <br>
+             <h6 class="d-inline">Balance:</h6>
+             <h6 class="d-inline" id="balance-total" >00</h6>
+             <br>
+               <!-- //saving -->
+        
+          <h6 class="d-inline" >Save:</h6>
+          
+          <input class="d-inline" id="save-input" type="text">
+            <h5 class="d-inline">%</h5>
+      <button class="d-inline bg-info" id="save">save</button>
+      <br>
+      <h6 class="d-inline">Saving Amount:</h6>
+      <h6 class="d-inline" id="saving-total" >00</h6>
+      <br>
+      <h6 class="d-inline">Remaining Balance:</h6>
+      <h6 class="d-inline" id="r-total" >00</h6>
+            </div>
+          </div>
         </div>
-      </nav>
+
+            
+    </section>
     
 </body>
 </html>
