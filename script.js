@@ -1,8 +1,11 @@
+//*************JS command for save button handler//
+
 document.getElementById('save').addEventListener('click',function(){
     const depositInput = document.getElementById('income-input');
 const depositAmountText = depositInput.value;
 const depositAmount = parseFloat(depositAmountText);
 
+// save input**********
 
     const saveInput = document.getElementById('save-input');
     const saveAmountText = saveInput.value;
@@ -28,7 +31,7 @@ rbalanceTotal.innerText = newrBalanceTotal;
 
   })
 
-  // ***********calculation first firt**********
+  // ***********calculation first part**********
 
   document.getElementById('calculate').addEventListener('click',function(){
     const depositInput = document.getElementById('income-input');
@@ -41,6 +44,7 @@ const foodInput = document.getElementById('food-input');
 const foodAmountText = foodInput.value;
 const foodAmount = parseFloat(foodAmountText);
 
+//clear Input Button
 foodInput.value = '';
 
 
@@ -48,6 +52,7 @@ const rentInput = document.getElementById('rent-input');
 const rentAmountText = rentInput.value;
 const rentAmount = parseFloat(rentAmountText);
 
+//clear Input Button
 rentInput.value = '';
 
 
@@ -55,6 +60,7 @@ const clothInput = document.getElementById('cloth-input');
 const clothAmountText = clothInput.value;
 const clothAmount = parseFloat(clothAmountText);
 
+//clear Input Button
 clothInput.value = '';
 
 

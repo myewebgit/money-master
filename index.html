@@ -9,23 +9,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-light bg-info w-80 mx-auto ">
-            <div class="container-fluid  ">
-              <a class="navbar-brand text-center" href="#">
-                <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Money Calculation
-              </a>
-            </div>
-          </nav>
+  <!-- ********Header********* -->
+    <header >
+      <h2 class="text-center border rounded-3 bg-info p-3 mt-3 ">Monthly Budget Calculation!</h2>
     </header>
 
+    <!-- **********Main Section********* -->
     <section class="mt-5 text-center">
       <div class="container px-4">
           <div class="row ">
             <div class="col-lg-6 col-sm-12  rounded-3 ">
              <div class="border bg-light"><img src="images/Screenshot_.png" alt=""></div>
             </div>
+
+            <!-- *******Income Calculation********* -->
+
             <div class="col-lg-6 col-sm-12 border border-2  rounded-3  bg-secondary ">
              <h5>Income</h5>
              <div>
@@ -33,6 +31,7 @@
                  <input class="d-inline " id="income-input" type="text" placeholder="Input value here!!">
                  
              </div>
+             <!-- **********  Expences Portion ********** -->
              <div>
                  <h5>Expences</h5>
                  <h6 class="d-inline">Food:</h6>
@@ -49,6 +48,9 @@
              
              <button class="bg-info" id="calculate">Calculate</button>
              <br>
+
+             <!-- **********Notification Bar********** -->
+
              <div class="notify-section">
               <p id="notify-fail" class="notify">❌ Please give a positive value</p>
               
@@ -59,7 +61,7 @@
              <h6 class="d-inline">Balance:</h6>
              <h6 class="d-inline" id="balance-total" >00</h6>
              <br>
-               <!-- //saving -->
+               <!-- //saving Calculation -->
         
           <h6 class="d-inline" >Save:</h6>
           
